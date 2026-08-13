@@ -2,8 +2,9 @@
 
 ## 작업 범위
 
-- 모든 작업은 `C:\Users\jeong\Desktop\DinoTD`를 프로젝트 루트로 삼는다.
-- 파일을 생성하거나 변경할 때는 이 작업 루트 안에서만 수행한다.
+- 모든 작업은 현재 `AGENTS.md`가 위치한 Git 작업 폴더의 최상위 디렉터리를 프로젝트 루트로 삼는다.
+- 프로젝트 루트는 작업 시작 시 `git rev-parse --show-toplevel`로 확인한다.
+- 파일을 생성하거나 변경할 때는 현재 프로젝트 루트 안에서만 수행한다.
 - 기존 파일을 덮어쓰기 전에는 현재 내용과 변경 범위를 먼저 확인한다.
 - 매 작업을 시작할 때 본격적인 분석, 답변 또는 파일 변경 전에 `.rules/work-start.md`를 먼저 읽고 그 절차를 따른다.
 - `.rules/work-start.md`의 전체 Markdown 확인 절차가 끝나기 전에는 기획 판단이나 구현을 시작하지 않는다.
@@ -74,6 +75,15 @@
 - 기획 문서를 작성하거나 검토하기 전에 `docs/guidelines/game-design-authoring-rules.md`에서 작업과 관련된 절을 확인하고 따른다.
 - 모든 Markdown은 `.rules/work-start.md`에 따라 매 작업 시작 시 전부 읽되, 내용을 다른 문서에 복제하지 않는다.
 - 구체적인 게임 기획서 파일 구조와 템플릿은 별도의 합의를 거쳐 정한다.
+
+## 병렬 세션 작업 범위
+
+- `design/combat-system` 브랜치는 세션 1이 사용하며 `docs/game-design/combat-system-rules.md`와 공통 문서 통합을 담당한다.
+- `design/stage-map-system` 브랜치는 세션 2가 사용하며 `docs/game-design/stage-map-rules.md`만 작성한다.
+- `AGENTS.md`, `.rules`, `docs/game-design/terminology.md`, `docs/game-design/jurassic-tower-defense-gdd.md`와 기존 카드 문서는 세션 1만 수정한다.
+- 세션 2에서 공통 문서 변경이 필요하면 직접 수정하지 않고 세션 1에 변경 요청을 전달한다.
+- 각 세션은 작업 시작과 커밋 전에 현재 브랜치와 변경 파일이 담당 범위에 맞는지 확인한다.
+- `main`은 통합 브랜치로 사용하며 세부 기획을 직접 작성하지 않는다.
 
 ## 작업 완료 보고
 

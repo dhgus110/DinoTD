@@ -7,8 +7,8 @@
 
 ## 매 작업 시작 전 필수 절차
 
-1. 프로젝트 루트가 `C:\Users\jeong\Desktop\DinoTD`인지 확인한다.
-2. `git status --short`로 다른 세션이나 사용자가 만든 변경사항을 확인한다.
+1. `git rev-parse --show-toplevel`로 현재 Git 작업 폴더의 프로젝트 루트를 확인한다.
+2. `git branch --show-current`와 `git status --short`로 현재 세션의 브랜치, 다른 세션이나 사용자가 만든 변경사항을 확인한다.
 3. `rg --files --hidden -g '*.md' -g '!.git/**'`로 숨김 폴더를 포함한 프로젝트 루트 아래의 모든 Markdown 파일을 찾는다.
 4. 검색된 Markdown 파일을 예외 없이 처음부터 끝까지 모두 읽는다.
 5. 긴 문서의 출력이 잘리면 나누어 읽어 마지막 줄까지 확인한다.
@@ -31,6 +31,9 @@
 - 작업 도중 다른 세션의 변경이 감지되면 변경된 Markdown 파일을 다시 읽는다.
 - 문서를 수정하기 직전에 해당 문서의 최신 내용과 `git status --short`를 다시 확인한다.
 - 새 용어나 규칙을 추가할 때는 `docs/game-design/terminology.md`와 관련 규칙의 단일 원본을 먼저 확인한다.
+- `design/combat-system`에서는 세션 1의 전투 규칙 문서와 공통 문서만 수정한다.
+- `design/stage-map-system`에서는 `docs/game-design/stage-map-rules.md`만 수정한다.
+- 현재 브랜치와 담당 문서가 일치하지 않으면 파일을 수정하지 않는다.
 
 ## 완료 보고
 
