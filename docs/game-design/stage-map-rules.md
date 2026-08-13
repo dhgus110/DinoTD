@@ -2,7 +2,7 @@
 
 > 문서 상태: 확정
 >
-> 문서 개정 번호(revision): `0.4`
+> 문서 개정 번호(revision): `0.6`
 >
 > 적용 범위: 전장 맵 구조, 공룡 경로, 배치 구획, 카메라와 스테이지별 맵 콘텐츠 기획
 >
@@ -32,8 +32,8 @@
 
 ### 2.2 검증 필요
 
-- 봄 월드 기준 타워 슬롯 최대 `14개`의 모바일 가독성
-- 봄 월드 기준 나무 최대 `8그루`의 전투·채집 가독성
+- 현재 확정된 봄·여름 월드 기준 타워 슬롯 최대 `14개`의 모바일 가독성
+- 현재 확정된 봄·여름 월드 기준 나무 최대 `8그루`의 전투·채집 가독성
 - `48×18타일` 맵의 전투 가독성과 카메라 이동 빈도
 - 화면 밖 위험과 보상을 플레이어가 제때 인지하는 비율
 
@@ -66,6 +66,8 @@
 진행·해금 범위는 `jurassic-tower-defense-gdd.md`를 따른다. 봄 월드의 콘텐츠 수량과 학습 목표는
 `spring-stage-content.md`, 실제 경로·상대 배치·초기 카메라는 `spring-world-production-spec.md`,
 여름 월드의 맵 구조·수량·전략적 의도와 검증 항목은 `summer-stage-content.md`를 원본으로 사용한다.
+여름 월드의 실제 경로 형태·상대 배치와 초기 카메라는 아직 제작 명세가 없으며
+`remaining-design-work.md`의 후속 작업에서 정한다.
 카드와 초기 건설권의 세부 규칙은 `card-draw-rules.md`를 따른다. 이 문서는 해당 내용을 복제하거나
 변경하지 않는다.
 
@@ -179,7 +181,7 @@
 | 참조 스테이지 | 맵 가로 크기 | 초기 화면의 주요 지점 | 공룡 경로 수·합류 여부 | 출현 지점 수 | 타워 슬롯 수 | 방벽 슬롯 수 | 채집 건물 수 | 나무 수 | 전략적 의도·주요 재배치 선택 | 남은 검증 사항 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 봄 월드 1-1~1-10 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-world-production-spec.md` 참조 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-world-production-spec.md` 참조 |
-| 여름 월드 2-1~2-10 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 |
+| 여름 월드 2-1~2-10 | `summer-stage-content.md` 참조 | 후속 여름 월드 제작 명세에서 확정 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 |
 
 ## 11. 수용 조건
 
@@ -209,8 +211,8 @@
 
 | 항목 | 확인할 내용 | 결정에 미치는 영향 |
 | --- | --- | --- |
-| 타워 슬롯 14개 | 작은 모바일 화면에서 빈 슬롯, 타워와 선택 상태를 구분하고 의도한 슬롯을 선택할 수 있는지 | 봄 월드 최대 14개 유지 또는 축소 결정 |
-| 나무 8그루 | 일꾼과 나무가 늘어날 때 전투 가독성과 현장 경제 선택이 유지되는지 | 봄 월드 최대 8그루 유지 또는 축소 결정 |
+| 타워 슬롯 14개 | 작은 모바일 화면에서 빈 슬롯, 타워와 선택 상태를 구분하고 의도한 슬롯을 선택할 수 있는지 | 봄·여름 월드 최대 14개 유지 또는 축소 결정 |
+| 나무 8그루 | 일꾼과 나무가 늘어날 때 전투 가독성과 현장 경제 선택이 유지되는지 | 봄·여름 월드 최대 8그루 유지 또는 축소 결정 |
 | 48×18타일 맵 | 반복적인 카메라 이동 없이 주요 전투 지점과 재배치 선택을 파악할 수 있는지 | 최대 맵 크기 유지 또는 축소 결정 |
 | 화면 밖 알림 | 개척지 관문 누수 위험과 알파 공룡을 제때 인지하고 알림을 올바르게 선택하는지. 중요 보상은 GDD에 사건이 정의된 뒤 검증 대상에 추가 | 알림 우선순위와 표현 보정 |
 
@@ -221,6 +223,7 @@
 - 봄 월드 스테이지별 콘텐츠: `spring-stage-content.md`
 - 봄 월드 실제 경로·상대 배치·초기 카메라: `spring-world-production-spec.md`
 - 여름 월드 맵 콘텐츠: `summer-stage-content.md`
+- 여름 월드 제작 명세 후속 작업: `remaining-design-work.md`
 - 목재 경제와 방벽: `economy-barricade-rules.md`
 - 초기 건설권과 카드 배치 흐름: `card-draw-rules.md`
 - 기획 작성 원칙: `../guidelines/game-design-authoring-rules.md`
@@ -229,6 +232,7 @@
 
 | revision | 변경 내용 | 이유 | 영향 범위 | 결정자 |
 | --- | --- | --- | --- | --- |
+| 0.6 | 개정 번호와 여름 초기 카메라·제작 명세 상태 교정 | 최신 변경 기록과 문서 상단 번호를 일치시키고 콘텐츠 완료와 제작 명세 미완료를 구분 | 문서 상태, 여름 맵 원본과 봄·여름 가독성 검증 | 사용자 |
 | 0.5 | 봄 제작 명세와 여름 월드 콘텐츠 원본 참조 추가 | 병합 완료 후 월드별 맵 정보의 단일 원본을 명확히 구분 | 스테이지별 맵 콘텐츠 참조와 관련 원본 | 사용자 |
 | 0.4 | 봄 월드 콘텐츠와 경제·방벽 상세 원본 연결, 타워 슬롯 14개와 나무 8그루 검증 기준 반영 | 세션 2 상세 규칙과 콘텐츠의 단일 원본 분리 | 스테이지 콘텐츠 표, 채집·방벽 참조와 가독성 검증 | 사용자 |
 | 0.3 | 기획용 ID 제거, 일시정지 조작 차단, 중요 보상 원본과 궁극 알림 제외 규칙 정리 | 문서 형식을 단순화하고 전투·GDD와의 충돌 제거 | 카메라, 화면 밖 알림, 채집 요소 원본과 확인 사례 | 사용자 |
