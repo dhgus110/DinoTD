@@ -15,6 +15,8 @@
 - 봄 월드 후속 브랜치는 `design/spring-vertical-slice`다.
 - 여름 월드 후속 브랜치는 `design/summer-world`다.
 - 두 브랜치는 같은 기준 커밋에서 시작한다.
+- 세션 1은 `design/spring-vertical-slice`의 `b31904ccf687e46faf1c692b9fafa54c38226b53`에서 완료됐다.
+- 세션 2는 `design/summer-world`의 `115291747a0795c7ee713bd440b2c7e1ba922e54`에서 완료됐다.
 - 제품 범위 밖의 계절 월드는 제작·검토·확장 대상에 포함하지 않는다.
 
 ## 2. 병렬 작업 시작 조건
@@ -27,7 +29,9 @@
 
 ## 3. 세션 1: 봄 월드 완성
 
+- 상태: 완료
 - 담당 브랜치: `design/spring-vertical-slice`
+- 최종 커밋: `b31904ccf687e46faf1c692b9fafa54c38226b53`
 - 새 원본 문서: `spring-world-production-spec.md`
 - 수정 허용 파일: `spring-world-production-spec.md`, 신규·변경 용어가 있을 때의 `terminology.md`
 - 규칙 원본: `spring-stage-content.md`, `stage-map-rules.md`, `combat-system-rules.md`,
@@ -59,7 +63,9 @@
 
 ## 4. 세션 2: 여름 월드 콘텐츠
 
+- 상태: 완료
 - 담당 브랜치: `design/summer-world`
+- 최종 커밋: `115291747a0795c7ee713bd440b2c7e1ba922e54`
 - 새 원본 문서: `summer-stage-content.md`
 - 수정 허용 파일: `summer-stage-content.md`, 신규·변경 용어가 있을 때의 `terminology.md`
 - 규칙 원본: `jurassic-tower-defense-gdd.md`, `stage-map-rules.md`, `combat-system-rules.md`,
@@ -131,4 +137,5 @@
 
 | 변경 내용 | 이유 | 영향 범위 | 결정자 |
 | --- | --- | --- | --- |
+| 세션 1·2 완료 상태와 최종 브랜치 커밋 기록 | 병합된 병렬 작업의 완료 기준과 추적 정보 명확화 | 봄·여름 월드 세션 인계 | 사용자 |
 | 병렬 세션 2개의 담당 범위와 이후 남은 기획 작업 기록 | 작업 누락과 공통 원본의 동시 수정 방지 | 봄·여름·겨울 콘텐츠, 체크포인트와 플레이테스트 | 사용자 |

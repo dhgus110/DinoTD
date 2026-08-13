@@ -63,9 +63,11 @@
 - 저장·복원 구조와 런타임 오류 처리
 - 자동 맵 유효성 검사와 별도 제작 점검표
 
-진행·해금 범위는 `jurassic-tower-defense-gdd.md`, 봄 월드 스테이지별 콘텐츠는
-`spring-stage-content.md`를 원본으로 사용한다. 카드와 초기 건설권의 세부 규칙은
-`card-draw-rules.md`를 따른다. 이 문서는 해당 내용을 복제하거나 변경하지 않는다.
+진행·해금 범위는 `jurassic-tower-defense-gdd.md`를 따른다. 봄 월드의 콘텐츠 수량과 학습 목표는
+`spring-stage-content.md`, 실제 경로·상대 배치·초기 카메라는 `spring-world-production-spec.md`,
+여름 월드의 맵 구조·수량·전략적 의도와 검증 항목은 `summer-stage-content.md`를 원본으로 사용한다.
+카드와 초기 건설권의 세부 규칙은 `card-draw-rules.md`를 따른다. 이 문서는 해당 내용을 복제하거나
+변경하지 않는다.
 
 ## 4. 맵의 공통 구조
 
@@ -176,7 +178,8 @@
 
 | 참조 스테이지 | 맵 가로 크기 | 초기 화면의 주요 지점 | 공룡 경로 수·합류 여부 | 출현 지점 수 | 타워 슬롯 수 | 방벽 슬롯 수 | 채집 건물 수 | 나무 수 | 전략적 의도·주요 재배치 선택 | 남은 검증 사항 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 봄 월드 1-1~1-10 | `spring-stage-content.md` 참조 | `spring-stage-content.md` 참조 | `spring-stage-content.md` 참조 | `spring-stage-content.md` 참조 | `spring-stage-content.md` 참조 | `spring-stage-content.md` 참조 | `spring-stage-content.md` 참조 | `spring-stage-content.md` 참조 | `spring-stage-content.md` 참조 | `spring-stage-content.md` 참조 |
+| 봄 월드 1-1~1-10 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-world-production-spec.md` 참조 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-stage-content.md`, `spring-world-production-spec.md` 참조 | `spring-world-production-spec.md` 참조 |
+| 여름 월드 2-1~2-10 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 | `summer-stage-content.md` 참조 |
 
 ## 11. 수용 조건
 
@@ -216,6 +219,8 @@
 - 공식 용어: `terminology.md`
 - 게임 방향, 진행·해금, 월드·스테이지 범위, 전투·경제·저장 규칙: `jurassic-tower-defense-gdd.md`
 - 봄 월드 스테이지별 콘텐츠: `spring-stage-content.md`
+- 봄 월드 실제 경로·상대 배치·초기 카메라: `spring-world-production-spec.md`
+- 여름 월드 맵 콘텐츠: `summer-stage-content.md`
 - 목재 경제와 방벽: `economy-barricade-rules.md`
 - 초기 건설권과 카드 배치 흐름: `card-draw-rules.md`
 - 기획 작성 원칙: `../guidelines/game-design-authoring-rules.md`
@@ -224,6 +229,7 @@
 
 | revision | 변경 내용 | 이유 | 영향 범위 | 결정자 |
 | --- | --- | --- | --- | --- |
+| 0.5 | 봄 제작 명세와 여름 월드 콘텐츠 원본 참조 추가 | 병합 완료 후 월드별 맵 정보의 단일 원본을 명확히 구분 | 스테이지별 맵 콘텐츠 참조와 관련 원본 | 사용자 |
 | 0.4 | 봄 월드 콘텐츠와 경제·방벽 상세 원본 연결, 타워 슬롯 14개와 나무 8그루 검증 기준 반영 | 세션 2 상세 규칙과 콘텐츠의 단일 원본 분리 | 스테이지 콘텐츠 표, 채집·방벽 참조와 가독성 검증 | 사용자 |
 | 0.3 | 기획용 ID 제거, 일시정지 조작 차단, 중요 보상 원본과 궁극 알림 제외 규칙 정리 | 문서 형식을 단순화하고 전투·GDD와의 충돌 제거 | 카메라, 화면 밖 알림, 채집 요소 원본과 확인 사례 | 사용자 |
 | 0.2 | 경로 길이 측정 기준, 나무 접근 조건과 화면 밖 알림 대상을 명확화 | 맵 제작 판정의 모호함과 문서 간 용어·소유권 충돌 제거 | 경로 길이, 나무 접근, 화면 밖 알림과 확인 사례 | 사용자 |
