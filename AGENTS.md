@@ -5,7 +5,11 @@
 - 모든 작업은 `C:\Users\jeong\Desktop\DinoTD`를 프로젝트 루트로 삼는다.
 - 파일을 생성하거나 변경할 때는 이 작업 루트 안에서만 수행한다.
 - 기존 파일을 덮어쓰기 전에는 현재 내용과 변경 범위를 먼저 확인한다.
+- 매 작업을 시작할 때 본격적인 분석, 답변 또는 파일 변경 전에 `.rules/work-start.md`를 먼저 읽고 그 절차를 따른다.
+- `.rules/work-start.md`의 전체 Markdown 확인 절차가 끝나기 전에는 기획 판단이나 구현을 시작하지 않는다.
 - 이 문서는 협업 방식의 원본이며, 세부 게임 기획 작성 규칙의 원본은 `docs/guidelines/game-design-authoring-rules.md`이다.
+- 기획·용어집 담당 절차와 문서 품질 기준은 `docs/guidelines/DESIGNER_GUIDE.md`를 의무 적용한다.
+- Dino TD의 공식 용어와 금지 표현의 원본은 `docs/game-design/terminology.md`이다.
 
 ## 기본 언어와 표현
 
@@ -59,9 +63,16 @@
 ## 문서와 정보 관리
 
 - 같은 규칙, 수치, 용어는 하나의 원본에서만 관리한다.
+- 지침이 충돌하면 `AGENTS.md`의 프로젝트 규칙, `docs/game-design/terminology.md`의 공식 용어, `docs/guidelines/DESIGNER_GUIDE.md`의 기획 절차, `docs/guidelines/game-design-authoring-rules.md`의 범용 작성 원칙 순서로 적용한다.
+- 대화와 문서에서는 `docs/game-design/terminology.md`의 공식 용어를 우선하고, 등록된 사용하지 않을 표현을 새로 사용하지 않는다.
+- 새로운 반복 용어가 필요하면 다른 문서에 먼저 쓰지 말고 용어집에 정의와 예시를 등록한다.
 - 다른 문서에서 같은 정보가 필요하면 내용을 복제하지 말고 원본 문서나 해당 절을 참조한다.
+- 새 기능 기획에는 `DESIGNER_GUIDE.md`에 따라 영구적인 `feature_id`, 규칙 ID, 수용 조건 ID, 포함·제외 범위와 변경 이력을 사용한다.
+- 기존 기능을 바꿀 때는 플레이어 경험, 구현 영향, 저장 데이터 영향, 밸런스 영향과 용어 영향을 함께 확인한다.
+- `FEATURE_WORKFLOW.md`, `package.json`, 기능 생성·검사 명령이나 Git hook처럼 저장소에 아직 존재하지 않는 자동화는 동작한다고 가정하지 않는다. 관련 기반이 만들어지기 전에는 해당 항목을 `미정` 또는 `적용 대기`로 보고한다.
+- 기존 기획 문서와 공식 용어집은 현재 경로인 `docs/game-design`을 원본으로 유지한다. 별도 마이그레이션 합의 없이 `docs/design`, `docs/glossary`로 복제하거나 이동하지 않는다.
 - 기획 문서를 작성하거나 검토하기 전에 `docs/guidelines/game-design-authoring-rules.md`에서 작업과 관련된 절을 확인하고 따른다.
-- `docs/guidelines/game-design-authoring-rules.md` 전체를 매 작업마다 불필요하게 읽거나 다른 문서에 복제하지 않는다.
+- 모든 Markdown은 `.rules/work-start.md`에 따라 매 작업 시작 시 전부 읽되, 내용을 다른 문서에 복제하지 않는다.
 - 구체적인 게임 기획서 파일 구조와 템플릿은 별도의 합의를 거쳐 정한다.
 
 ## 작업 완료 보고
